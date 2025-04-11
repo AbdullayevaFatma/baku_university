@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Quattrocento", serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background-image: url("../src/assets/campus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+.info-bg{
+  background-image: url("../src/assets/students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.library-img{
+  background-image: url("../src/assets/library.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icons {
+  background-color: #E77C22;
+  border: 5px solid #E77C22;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s, border 0.5s;
+}
+
+.icons:hover {
+  background-color: #F08A34;
+  border: 5px solid #F08A34;
+  transform: scale(1.1);
+}
+
+.subfooter {
+  background-image: url(../src/assets/subfooter.jpg);
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+
+
