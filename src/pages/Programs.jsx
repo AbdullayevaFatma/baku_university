@@ -21,7 +21,7 @@ export default function Programs() {
         {programs.map((program) => (
           <div
             key={program.id}
-            className="bg-white rounded-3xl shadow-lg transform hover:scale-[1.03] transition-all duration-300 hover:shadow-2xl relative overflow-hidden"
+            className="bg-white rounded-3xl shadow-lg transform hover:scale-[1.03] transition-all duration-300 hover:shadow-2xl relative overflow-hidden cursor-pointer"
           >
             <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-[#024C97] to-[#E77C22]"></div>
             <div className="p-6 flex flex-col h-full justify-between">

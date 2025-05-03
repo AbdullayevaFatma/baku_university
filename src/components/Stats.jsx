@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const numbersBy = [
   { count: 23344, title: "Students from Around the World" },
   { count: 1238, title: "Academicians and Researchers" },
-  { count: 78222, title: "International Publications" },
+  { count: 78222, title: "International Students" },
 ];
 
 const Stats = () => {
@@ -46,7 +46,7 @@ const Stats = () => {
   return (
     <div className="text-center flex flex-col justify-between gap-6 mx-auto w-[80vw] my-6 md:flex-row">
       {counts.map((item) => (
-        <div key={item.title} className="">
+        <div key={item.title}>
           <h2 className="text-5xl font-extrabold text-[#024C97] relative inline-block">
             {item.currentCount}
           </h2>
