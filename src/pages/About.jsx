@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import universityview from "../assets/universityview.jpg";
 import students from "../assets/students.jpg";
+import nightCampus from "../assets/nightcampus.jpg"
 
 const About = () => {
   const [animate, setAnimate] = useState(false);
@@ -93,6 +94,43 @@ const About = () => {
               students from around the world engaged in meaningful learning. The
               university shaped generations of ethical leaders known for their
               vision, integrity, and dedication to service.
+            </p>
+          </div>
+        </div>
+        <div className="relative flex flex-col md:flex-row items-center md:items-start min-h-[280px]">
+          <div
+            className={`w-full md:w-1/2 relative z-10 md:-right-6 md:-top-10 shadow-xl rounded-lg overflow-hidden
+            transition-all duration-2000 ease-in-out
+            ${
+              animate
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-full opacity-0"
+            }
+          `}
+          >
+            <img
+              src={nightCampus}
+              alt="Night Campus"
+              className="w-full h-[280px] object-cover opacity-90 hover:opacity-100 cursor-pointer"
+            />
+          </div>
+
+          <div
+            className={`w-full md:w-1/2 bg-gray-100 p-6 md:p-10 rounded-md shadow-md z-0 mt-6 md:mt-0 md:top-20 min-h-[280px]
+            transition-all duration-1000 ease-in-out
+            ${
+              animate
+                ? "translate-x-0 opacity-100"
+                : "translate-x-full opacity-0"
+            }
+          `}
+          >
+            <div className="border-t-3 border-orange-300 w-20 mb-3 rounded-2xl"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
+            A Library That Never Sleeps
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+            Baku University's library stays open late into the night, offering students a quiet and well-equipped space for study and research. With modern technology, digital resources, and comfortable study areas, it plays a key role in supporting academic success across all programs.
             </p>
           </div>
         </div>

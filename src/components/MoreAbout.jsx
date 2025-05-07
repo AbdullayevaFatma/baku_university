@@ -5,7 +5,7 @@ export default function MoreAbout() {
     <div className="bg-gray-100 text-white px-4 py-12 flex flex-col md:flex-row items-center justify-center gap-12">
       <div className="max-w-xl text-sm md:text-base leading-relaxed text-gray-700">
         <p>
-          <strong className="text-[#E77C22]">Baku University</strong>proudly
+          <strong className="text-[#E77C22]">Baku University</strong> proudly
           welcomes students from all corners of the globe, fostering a vibrant,
           multicultural community that celebrates diversity in every form.
           University offers an inclusive learning environment where students of
