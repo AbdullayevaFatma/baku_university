@@ -5,7 +5,7 @@ import BookCard from "../components/BookCard";
 
 const Library = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <div className="w-full min-h-[30vh] md:min-h-[45vh] relative overflow-hidden bg-gray-50">
         <div
           className="absolute inset-0 bg-cover bg-center library-img"
@@ -24,11 +24,12 @@ const Library = () => {
           Explore Knowledge, Discover Your Passion
         </h2>
 
-        <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-hidden">
+
           {books.map((book, index) => (
             <div
               key={index}
-              className={`group transform transition duration-500 hover:scale-[1.06] hover:shadow-2xl hover:-translate-y-1 opacity-0 animate-fade-in`}
+              className={`group transform transition duration-500 hover:scale-[1.03]  hover:shadow-2xl hover:-translate-y-1 opacity-0 animate-fade-in`}
               style={{
                 animationDelay: `${index * 150}ms`,
                 animationFillMode: "forwards",
@@ -37,9 +38,9 @@ const Library = () => {
               <div className="relative rounded-xl overflow-hidden shadow-lg bg-white">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#E77C22]/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 z-10"></div>
 
-                <BookCard {...book} />
+                <BookCard {...book} className="w-full max-w-full overflow-hidden"/>
 
-                <div className="h-1 bg-[#024C97] group-hover:w-full w-0 transition-all duration-500"></div>
+                <div className="absolute bottom-0 left-0 h-[2px] bg-[#024C97] group-hover:w-full w-0 transition-all duration-500"></div>
               </div>
             </div>
           ))}

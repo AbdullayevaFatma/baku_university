@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BookCard({ title, author }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 w-full max-w-xs h-54 flex flex-col justify-between hover:shadow-lg transition">
+    <div className="bg-white rounded-2xl shadow-md p-6 w-full  h-54 flex flex-col justify-between hover:shadow-lg transition">
       <div className="flex flex-col items-center">
         <h3 className="text-xl font-bold text-[#024C97] mb-2 line-clamp-2 text-center">
           {title}
