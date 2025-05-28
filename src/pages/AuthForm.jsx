@@ -48,7 +48,7 @@ export default function AuthForm() {
               <input
                 id="name"
                 type="text"
-                placeholder="John Doe"
+                placeholder="Leila Gambar"
                 value={student.name}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#024C97]"
